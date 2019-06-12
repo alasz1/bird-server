@@ -377,7 +377,8 @@ var BirdService = /** @class */ (function () {
     return BirdService;
 }());
 
-var apiUrl = "http://localhost:3000/api/birds";
+// const apiUrl = "http://localhost:3000/api/birds";
+var apiUrl = "https://bird-app-1.herokuapp.com/api/birds";
 var httpOptions = { headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Content-Type': 'application/json' }) };
 
 
