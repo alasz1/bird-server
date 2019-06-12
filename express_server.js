@@ -7,6 +7,7 @@ var cors = require('cors')
 app.use(cors())
 var parser = bodyParser.urlencoded({ extended: true });
 app.use(bodyParser.json());
+
 app.use(express.static('public'));
 
 router.route('/birds')
