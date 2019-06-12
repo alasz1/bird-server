@@ -152,13 +152,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var routes = [{
-        path: '',
-        redirectTo: '/',
-        pathMatch: 'full'
-    },
+var routes = [
+    //   {
+    //   path: '',
+    //   redirectTo: '/main',
+    //   pathMatch: 'full' 
+    // },
     {
-        path: '/',
+        path: '',
         component: _main_main_component__WEBPACK_IMPORTED_MODULE_3__["MainComponent"]
     },
     {
