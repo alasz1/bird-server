@@ -60,12 +60,15 @@ function saveToFile(){
     });
 }
 app.use('/api', router);
-var server = app.listen(3000, function () {
-    var host = server.address().address
-    var port = server.address().port
-    fs.readFile("birds.json",function(err, data){
-        birds=JSON.parse(data);
-        });
-    console.log("Now listening at http://%s:%s", host, port)
-})
+
+app.listen(process.env.PORT || 8080)
+
+// var server = app.listen(3000, function () {
+//     var host = server.address().address
+//     var port = server.address().port
+//     fs.readFile("birds.json",function(err, data){
+//         birds=JSON.parse(data);
+//         });
+//     console.log("Now listening at http://%s:%s", host, port)
+// })
 
